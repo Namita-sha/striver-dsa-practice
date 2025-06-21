@@ -23,15 +23,6 @@ This repository contains a single C++ file, `basic-array-operations.cpp`, which 
 
 ---
 
-## 🛠️ How to Compile & Run
-
-```bash
-g++ basic-array-operations.cpp -o basic-array-operations
-./basic-array-operations
-
----------------------------------------------------------------
-
-
 # 🔢 Remove Duplicates from Sorted Array
 
 This repository contains three solutions to the classic DSA problem:
@@ -92,6 +83,13 @@ int removeDup(int arr[], int n) {
     return (i + 1);
 }
 
+
+
+## 🛠️ How to Compile & Run
+
+```bash
+g++ basic-array-operations.cpp -o basic-array-operations
+./basic-array-operations
 
 
 
