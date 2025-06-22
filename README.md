@@ -85,6 +85,71 @@ int removeDup(int arr[], int n) {
 
 
 
+# 🔄 Rotate Array by K Positions
+
+This file contains an optimal solution to the **"Rotate Array"** problem.
+
+---
+
+## ✅ Problem Statement
+
+Given an array, rotate the elements to the right by `k` steps.
+
+> Example:  
+> Input: `arr = [1,2,3,4,5,6,7]`, `k = 3`  
+> Output: `arr = [5,6,7,1,2,3,4]`
+
+---
+
+## 🔍 Constraints
+
+- Array size: `1 <= n <= 10^5`
+- `k` can be greater than `n`, so use `k % n`
+- Must rotate **in-place** (O(1) space)
+
+---
+
+## 🚀 Approach: Reverse Method (Optimal)
+
+We can rotate the array in 3 simple steps:
+
+1. Reverse the entire array  
+2. Reverse the first `k` elements  
+3. Reverse the remaining `n - k` elements
+
+### 🧠 Why this works:
+Reversing parts of the array rearranges the order to mimic rotation without using extra space.
+
+---
+
+### ✅ C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+void rotate(vector<int>& nums, int k) {
+    int n = nums.size();
+    k = k % n; // in case k > n
+    reverse(nums.begin(), nums.end());
+    reverse(nums.begin(), nums.begin() + k);
+    reverse(nums.begin() + k, nums.end());
+}
+
+int main() {
+    vector<int> arr = {1,2,3,4,5,6,7};
+    int k = 3;
+    rotate(arr, k);
+
+    for (int i : arr) cout << i << " ";
+    return 0;
+}
+
+
+
+
 ## 🛠️ How to Compile & Run
 
 ```bash
