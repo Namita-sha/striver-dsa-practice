@@ -156,6 +156,100 @@ int main() {
 g++ basic-array-operations.cpp -o basic-array-operations
 ./basic-array-operations
 
+.......................................................................................................................................................
+# 🔍 Largest Element in an Array - C++ Solution
+
+This program solves the classic **array problem** of finding the **largest element** using two different approaches:
+
+1. **Brute Force Approach** using sorting
+2. **Optimal Approach** using a single pass linear traversal
+
+---
+
+## 🧠 Problem Statement
+
+> Given an array of integers, find and return the **largest (maximum) element** from the array.
+
+---
+
+## 📌 Example
+
+### 📥 Input
+Size = 6
+Array = [5, 1, 8, 3, 2, 10]
+
+shell
+Copy
+Edit
+
+### 📤 Output
+The largest element is: 10
+
+yaml
+Copy
+Edit
+
+---
+
+## 📂 Approaches and Algorithms
+
+### ✅ 1. Brute Force Approach (Using Sorting)
+
+**Algorithm:**
+1. Sort the array in ascending order.
+2. Return the last element of the sorted array.
+
+**Code Snippet:**
+```cpp
+sort(arr.begin(), arr.end());
+return arr[n - 1];
+Time Complexity: O(n log n)
+Space Complexity: O(1) (in-place sorting)
+
+🔸 This approach is simple but not optimal for just finding the maximum.
+
+🚀 2. Optimal Approach (Single Pass)
+Algorithm:
+
+Initialize a variable largest = arr[0]
+
+Traverse the array from index 1 to n-1
+
+For each element, if arr[i] > largest, update largest
+
+After the loop, return largest
+
+Code Snippet:
+
+cpp
+Copy
+Edit
+int largest = arr[0];
+for (int i = 1; i < n; i++) {
+    if (arr[i] > largest) {
+        largest = arr[i];
+    }
+}
+return largest;
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+🔹 Best approach for efficiency in time and memory.
+
+💻 How to Run the Code
+🔧 Compile the C++ file:
+bash
+Copy
+Edit
+g++ largest_element_in_array.cpp -o largest_element_in_array
+▶️ Run the program:
+bash
+Copy
+Edit
+./largest_element_in_array    # On Linux/macOS or Git Bash
+.\largest_element_in_array    # On Windows PowerShell
+
+
 
 
 📚 References
