@@ -250,6 +250,66 @@ Edit
 .\largest_element_in_array    # On Windows PowerShell
 
 
+.......................................................................................................................................................
+
+
+# 🚀 Remove Duplicates from Sorted Array (C++)
+
+This C++ program removes duplicate elements from a **sorted array** in-place using an efficient `O(n)` two-pointer approach.
+
+---
+
+## 🧠 Problem Statement
+
+> Given a sorted array, remove all duplicate elements such that each element appears only once.  
+> Return the new length and update the original array up to that length.
+
+---
+
+## 📌 Sample Input
+Enter the size of elements: 9
+Enter the elements of array in sorted order:
+1 2 2 3 4 4 5 6 6
+After removing duplicated numbers are: 1 2 3 4 5 6
+
+yaml
+Copy
+Edit
+
+---
+
+## 🛠️ Approaches
+
+### 1. Brute Force (using `set`)
+- Time Complexity: `O(n log n)`
+- Space Complexity: `O(n)`
+- Uses `set<int>` to remove duplicates and reassigns to the array.
+
+### 2. Optimal (Two-Pointer Technique)
+- Time Complexity: `O(n)`
+- Space Complexity: `O(1)`
+- Uses a pointer `i` to track unique values and a runner `j` to scan forward.
+
+---
+
+## 🔧 How It Works (Two-Pointer)
+
+```cpp
+int remove_duplicate(int arr[], int n) {
+    int i = 0;
+    for (int j = 1; j < n; j++) {
+        if (arr[i] != arr[j]) {
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+    return (i + 1);
+}
+🧪 How to Compile & Run
+bash
+
+g++ remove_duplicate_from_sorted_array.cpp -o remove_duplicates
+./remove_duplicates
 
 
 📚 References
