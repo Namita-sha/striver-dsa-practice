@@ -1,113 +1,88 @@
 # 🚀 Striver A2Z DSA Practice
 
-A structured repository to practice Data Structures & Algorithms using **Striver A2Z Sheet**, **LeetCode**, and **Pattern-Based Learning**.
-
-The goal of this repository is to:
-- 📈 Solve DSA problems consistently.
-- 📝 Document approaches and complexity.
-- 🔥 Maintain daily GitHub contributions.
-- 💼 Prepare for coding interviews.
-
----
-
-# 📚 DSA Topics
+## 📚 DSA Topics
 
 | Topic | Link |
-|-------|------|
-| Arrays | Arrays/ |
-| Strings | Strings/ |
-| Hashing | Hashing/ |
-| Two Pointers | TwoPointers/ |
-| Sliding Window | SlidingWindow/ |
-| Linked List | LinkedList/ |
-| Stack | Stack/ |
-| Queue | Queue/ |
-| Binary Search | BinarySearch/ |
-| Sorting | Sorting/ |
-| Recursion | Recursion/ |
-| Matrix | Matrix/ |
-| Trees | Trees/ |
-| BST | BST/ |
-| Graphs | Graphs/ |
-| Greedy | Greedy/ |
-| Dynamic Programming | DynamicProgramming/ |
+|------|------|
+| Arrays | [Arrays](./Arrays/) |
+| Strings | [Strings](./Strings/) |
+| Hashing | [Hashing](./Hashing/) |
+| Two Pointers | [TwoPointers](./TwoPointers/) |
+| Sliding Window | [SlidingWindow](./SlidingWindow/) |
+| Linked List | [LinkedList](./LinkedList/) |
+| Stack | [Stack](./Stack/) |
+| Queue | [Queue](./Queue/) |
+| Binary Search | [BinarySearch](./BinarySearch/) |
+| Sorting | [Sorting](./Sorting/) |
+| Recursion | [Recursion](./Recursion/) |
+| Matrix | [Matrix](./Matrix/) |
+| Trees | [Trees](./Trees/) |
+| BST | [BST](./BST/) |
+| Graphs | [Graphs](./Graphs/) |
+| Greedy | [Greedy](./Greedy/) |
+| Dynamic Programming | [DynamicProgramming](./DynamicProgramming/) |
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
+
+Each topic contains:
 
 ```
-DSA/
-│
-├── Arrays/
-│   ├── Basics/
-│   ├── Two Pointers/
-│   ├── Hashing/
-│   ├── Prefix Sum/
-│   ├── Sliding Window/
-│   │   ├── Fixed Size/
-│   │   └── Dynamic Size/
-│   ├── Kadane's Algorithm/
-│   ├── Matrix/
-│   └── README.md
-│
-├── Strings/
-│
-├── Hashing/
-│
-├── TwoPointers/
-│
-├── SlidingWindow/
-│
-├── LinkedList/
-│
-├── Stack/
-│
-├── Queue/
-│
-├── BinarySearch/
-│
-├── Sorting/
-│
-├── Recursion/
-│
-├── Matrix/
-│
-├── Trees/
-│
-├── BST/
-│
-├── Graphs/
-│
-├── Greedy/
-│
-├── DynamicProgramming/
-│
-└── README.md
+Basics/
+Easy/
+Medium/
+Hard/
+README.md
+```
+
+For **Arrays**, problems are organized by patterns instead of difficulty.
+
+```
+Arrays/
+│── Basics/
+│── TwoPointers/
+│── Hashing/
+│── PrefixSum/
+│── SlidingWindow/
+│   ├── FixedSize/
+│   └── DynamicSize/
+│── KadanesAlgorithm/
+│── Matrix/
+│── README.md
+```
+
+For **Strings**, problems are organized as:
+
+```
+Strings/
+│── Basics/
+│── README.md
+```
+
+Files inside every folder:
+
+```
+problem-name.cpp
+README.md
 ```
 
 ---
 
-# 📄 Problem Template
-
-Each problem follows the same format.
+## 📄 Problem Template
 
 ```md
-# Problem Name
+# Problem Title
 
 Source: LeetCode / Striver A2Z
 
-## Problem
+## Summary
 
-Short description.
-
-## Intuition
-
-Explain the idea behind the solution.
+Short explanation of the question.
 
 ## Approach
 
-Step-by-step logic.
+Logic, intuition, and method used.
 
 ## Complexity
 
@@ -118,24 +93,8 @@ Space: O(?)
 ## Code
 
 ```cpp
-// C++ Solution
+// solution
+```
 ```
 
-```
-
 ---
-
-
----
-
-# 🎯 Goal
-
-- Complete Striver A2Z Sheet
-- Master DSA Patterns
-- Improve problem-solving skills
-- Prepare for OA and Interviews
-- Maintain daily GitHub streak
-
----
-
-## ⭐ If you find this repository useful, consider giving it a star!
